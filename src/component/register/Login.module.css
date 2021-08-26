@@ -1,0 +1,53 @@
+.mainDivLogin {
+    display: flex;
+}
+
+.mainDiv {
+    width: 55%;
+    height: 100vh;
+    background-image: URL('../../files/bg.png');
+    display: grid;
+    place-items: center;
+}
+
+.h1 {
+    color: greenyellow;
+}
+
+.secDiv {
+    padding: 30px;
+}
+.btnDiv{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.loginBtn {
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 17px;
+    color: black;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+
+.a {
+    color: black;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
+.plink{
+    display: flex;
+
+}
+
+.linkA{
+    margin: 0;
+    padding: 0;
+    color: #1B95E0;
+    margin-left: 5px;
+}
