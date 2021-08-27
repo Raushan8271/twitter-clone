@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 function SingleItem({ link, icon, itemName }) {
     return (
         <Link className={style.link} to={link}>
-            <div className={style.a}>
+            <span className={style.a}>
                 {icon}
-                <p style={{marginLeft:"15px"}}>{itemName}</p>
-            </div>
+                <p style={{ marginLeft: "15px" }}>{itemName}</p>
+            </span>
         </Link>
     )
 }

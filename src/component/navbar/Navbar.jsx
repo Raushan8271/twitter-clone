@@ -2,6 +2,7 @@ import React from 'react'
 import style from './Navbar.module.css'
 import SingleItem from './SingleItem'
 import TwitterBtn from './TwitterBtn'
+import { Link } from 'react-router-dom'
 import { AiOutlineTwitter, AiTwotoneHome } from "react-icons/ai";
 import { BiHash } from "react-icons/bi";
 import { IoIosNotificationsOutline, IoMdListBox } from "react-icons/io";
@@ -11,7 +12,11 @@ import { CgMoreO, CgProfile } from "react-icons/cg";
 function Navbar() {
     return (
         <div className={style.navbar}>
-            <SingleItem link={"/home"} icon={<AiOutlineTwitter size="2.5rem" />} />
+            <Link style={{width:"80px",marginLeft:"-40%"}} className={style.link} to={"/home"}>
+                <span className={style.a}>
+                    <AiOutlineTwitter size="3rem" />
+                </span>
+            </Link>
             <SingleItem link={"/home"} icon={<AiTwotoneHome size="1.7rem" />} itemName="Home" />
             <SingleItem link={"/explore"} icon={<BiHash size="1.7rem" />} itemName="Explore" />
             <SingleItem link={"/notification"} icon={<IoIosNotificationsOutline size="1.7rem" />} itemName="Notifications" />

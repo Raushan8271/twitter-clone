@@ -22,7 +22,7 @@ function Register() {
                             <LoginBtn item="Sign up with phone or email" />
                         </div>
                         <p style={{ fontSize: "14px", marginTop: "10px" }}>By signing up, you agree to the Terms of Service and Privacy <br></br> Policy, including Cookie Use.</p>
-                        <p className={style.plink} style={{ marginTop: "15px" }}>Already have an account? <Link className={style.linkA}>
+                        <p className={style.plink} style={{ marginTop: "15px" }}>Already have an account? <Link to='/' className={style.linkA}>
                             Log in
                         </Link> </p>
                     </div>

@@ -17,11 +17,11 @@ function Login() {
                         <h1 style={{ fontSize: "70px", marginTop: "50px" }}>Happening now</h1>
                         <h2 style={{ fontSize: "35px", marginTop: "40px" }}>Log in to Twitter</h2>
                         <div className={style.btnDiv}>
-                            <LoginBtn icon={<FcGoogle size="1.5rem" />} item="Log in with Google" />
-                            <LoginBtn icon={<FaApple size="1.5rem" />} item="Log in with Apple" />
-                            <LoginBtn item="Use phone, email or username" />
+                            <LoginBtn link={"/login"} icon={<FcGoogle size="1.5rem" />} item="Log in with Google" />
+                            <LoginBtn link={"/login"} icon={<FaApple size="1.5rem" />} item="Log in with Apple" />
+                            <LoginBtn link={"/login"} item="Use phone, email or username" />
                         </div>
-                        <p className={style.plink} style={{ marginTop: "15px" }}>Don’t have an account? <Link className={style.linkA}>
+                        <p className={style.plink} style={{ marginTop: "15px" }}>Don’t have an account? <Link to='/register' className={style.linkA}>
                             Sign up
                         </Link> </p>
                     </div>
