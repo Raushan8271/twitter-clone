@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom'
 import Login from '../component/login/Login'
 import Register from '../component/register/Register'
 import LoginPage from '../component/login/LoginPage'
+import RegisterPage from '../component/register/RegisterPage'
 
 function Router() {
     const [login, setLogin] = useState(false)
@@ -69,6 +70,9 @@ function Router() {
                         </Route>
                         <Route exact path="/register">
                             <Register />
+                        </Route>
+                        <Route exact path="/register/registerPage">
+                            <RegisterPage />
                         </Route>
                     </>
             }

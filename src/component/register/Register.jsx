@@ -17,9 +17,9 @@ function Register() {
                         <h1 style={{ fontSize: "70px", marginTop: "40px" }}>Happening now</h1>
                         <h2 style={{ fontSize: "35px", marginTop: "40px" }}>Join Twitter today.</h2>
                         <div className={style.btnDiv}>
-                            <LoginBtn icon={<FcGoogle size="1.5rem" />} item="Sign up with Google" />
-                            <LoginBtn icon={<FaApple size="1.5rem" />} item="Sign up with Apple" />
-                            <LoginBtn item="Sign up with phone or email" />
+                            <LoginBtn link={"/register/registerPage"} icon={<FcGoogle size="1.5rem" />} item="Sign up with Google" />
+                            <LoginBtn link={"/register/registerPage"} icon={<FaApple size="1.5rem" />} item="Sign up with Apple" />
+                            <LoginBtn link={"/register/registerPage"} item="Sign up with phone or email" />
                         </div>
                         <p style={{ fontSize: "14px", marginTop: "10px" }}>By signing up, you agree to the Terms of Service and Privacy <br></br> Policy, including Cookie Use.</p>
                         <p className={style.plink} style={{ marginTop: "15px" }}>Already have an account? <Link to='/' className={style.linkA}>
