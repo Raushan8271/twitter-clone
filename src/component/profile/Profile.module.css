@@ -1,0 +1,23 @@
+.Profile_div {
+    width: 45%;
+    height: 100vh;
+    /* background-color: blueviolet; */
+    margin-left: 23%;
+    margin-top: 50px;
+    border: 1px solid rgb(60, 60, 60);
+}
+
+.Profile_div_pic {
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.Profile_pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid blue;
+    margin: auto;
+}

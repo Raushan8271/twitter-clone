@@ -1,0 +1,8 @@
+.home_div {
+    width: 45%;
+    height: 2000px;
+    /* background-color: blueviolet; */
+    margin-left: 23%;
+    margin-top: 50px;
+    border: 1px solid rgb(60, 60, 60);
+}

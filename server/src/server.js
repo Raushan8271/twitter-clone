@@ -33,7 +33,7 @@ app.post("/login", async (req, res) => {
         const password = req.body.password
         const user = await Register.findOne({ email: email })
         if (password === user.password) {
-            res.sendStatus(201)
+            res.status(201).send(`${user.fname}`)
         } else {
             res.sendStatus(400)
         }

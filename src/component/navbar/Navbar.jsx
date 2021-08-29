@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import style from './Navbar.module.css'
 import SingleItem from './SingleItem'
 import TwitterBtn from './TwitterBtn'
@@ -8,11 +8,13 @@ import { BiHash } from "react-icons/bi";
 import { IoIosNotificationsOutline, IoMdListBox } from "react-icons/io";
 import { HiOutlineMail, HiOutlineBookmark } from "react-icons/hi";
 import { CgMoreO, CgProfile } from "react-icons/cg";
+import { AuthContext } from '../../context/AuthContextProvider'
 
 function Navbar() {
+    const { handleLogout } = useContext(AuthContext)
     return (
         <div className={style.navbar}>
-            <Link style={{width:"80px",marginLeft:"-40%"}} className={style.link} to={"/home"}>
+            <Link style={{ width: "80px", marginLeft: "-40%" }} className={style.link} to={"/home"}>
                 <span className={style.a}>
                     <AiOutlineTwitter size="3rem" />
                 </span>
@@ -26,6 +28,7 @@ function Navbar() {
             <SingleItem link={"/profile"} icon={<CgProfile size="1.7rem" />} itemName="Profile" />
             <SingleItem link={"/notification"} icon={<CgMoreO size="1.7rem" />} itemName="More" />
             <TwitterBtn />
+            <button style={{ marginTop: "50px", color: "red" }} onClick={handleLogout} className='tweet'>Logout</button>
         </div>
     )
 }

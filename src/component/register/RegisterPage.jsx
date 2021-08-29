@@ -19,7 +19,6 @@ function RegisterPage() {
                     password: password
                 })
                 alert("Registration Successful")
-
             } catch (e) {
                 alert("Something went wrong")
                 console.log(e)
