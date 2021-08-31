@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 
-const DB = 'mongodb+srv://raushan8271:root123@cluster0.ohrtz.mongodb.net/twitter?retryWrites=true&w=majority'
- 
-mongoose.connect(DB, {
-    useFindAndModify: true,
+mongoose.Promise = global.Promise;
+mongoose.connect(process.env.DATABASE, {
+    useFindAndModify: false,
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
