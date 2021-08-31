@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/twitter", {
+
+const DB = 'mongodb+srv://raushan8271:root123@cluster0.ohrtz.mongodb.net/twitter?retryWrites=true&w=majority'
+ 
+mongoose.connect(DB, {
     useFindAndModify: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
